@@ -36,8 +36,12 @@ h2 {
 	position: fixed;
 }
 
+.favorite span {
+	cursor: url('./images/face.png'), auto;
+}
+
 .items {
-	margin-left: 205px;
+	margin-left: 105px;
 	line-height: 1.5;
 }
 
@@ -48,10 +52,33 @@ h2 {
 }
 
 img {
-	position: absolute;
+	transition: 0.15s linear width;
+	position: fixed;
 	top: 0;
-	border-top: 2px solid #fff;
-	border-right: 2px solid #fff;
+	border-top: 5px solid #fff;
+	border-right: 5px solid #fff;
+}
+
+.notHoveringImage img {
+	opacity: 1 !important;
+}
+
+@media only screen and (min-width: 1600px) {
+	img {
+		width: 400px !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	img {
+		width: 100px !important;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	img {
+		display: none;
+	}
 }
 
 aside,
@@ -85,12 +112,6 @@ aside {
 	width: 15%;
 }
 
-@media only screen and (max-width: 1000px) {
-	img {
-		display: none;
-	}
-}
-
 @media only screen and (max-width: 767px) {
 	.favorite {
 		position: relative;
@@ -115,6 +136,7 @@ aside {
 ul {
   list-style-type: none;
   margin-top: 5px;
+	display: inline-block;
 }
 
 ul li::before {

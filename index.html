@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="./style.css" rel="stylesheet">
-
     <link rel="shortcut icon" href="./favicon.ico">
 
     <title>when in nyc</title>
@@ -13,24 +12,17 @@
   <body onload="onLoad()">
     <main>
       <section class="favorite">
-        <h2>My Favorite</h2>
+        <h2><span>My</span> Fave</h2>
       </section>
       <section class="items">
         <div class="wrapper">
           <aside id="eats"><h2>Eats</h2></aside>
-          <article id="eateats">
+          <article id="eatseats">
             <ul>
               <li id="veryfreshnoodles"><a href="https://goo.gl/maps/4zMLtBN7xtH2" target="_blank">Very Fresh Noodles (Chelsea)</a></li>
-              <img id="img-veryfreshnoodles" src="./images/veryfreshnoodles.jpeg" width="300" />
-
               <li id="jeju"><a href="https://goo.gl/maps/rHB2X9eZYkM2" target="_blank">Jeju Noodle Bar (West Village)</a></li>
-              <img id="img-jeju" src="./images/jeju.jpeg" width="300" />
-
               <li id="xian"><a href="https://www.google.com/maps/search/xian+famous+foods/@40.7420826,-74.0229937,14z/data=!3m1!4b1" target="_blank">Xi'an Famous Foods (Multiple)</a></li>
-              <!-- <img id="img-xian" src="./images/veryfreshnoodles.jpeg" width="300" /> -->
-
               <li id="babuji"><a href="https://goo.gl/maps/p6Py87C7VNR2" target="_blank">Babu Ji (Union Sq)</a></li>
-
               <li id="russ"><a href="https://www.google.com/maps/search/russ+and+daughters/@40.7347447,-74.0106361,14z/data=!3m1!4b1" target="_blank">Russ & Daughters (LES)</a></li>
               <li id="congeevillage"><a href="https://www.google.com/maps/search/congee+village/@40.7098265,-74.0690566,11z/data=!3m1!4b1" target="_blank">Congee Village (LES + Flushing)</a></li>
               <li id="abcv"><a href="https://goo.gl/maps/pE7EPFTfcsB2" target="_blank">abcv (Union Sq)</a></li>
@@ -64,13 +56,14 @@
               <li id="guggenheim"><a href="https://goo.gl/maps/cKVHc9vUret" target="_blank">Guggenheim (UES)</a></li>
               <li id="ps1"><a href="https://goo.gl/maps/jZnvp2zBsB62" target="_blank">MoMA PS1 (Long Island City)</a></li>
               <li id="noguchi"><a href="https://goo.gl/maps/7pjC6ZuaU222" target="_blank">Noguchi Museum (Long Island City)</a></li>
+              <!-- <li id="asdf"><a href="fdsasdf" target="_blank">aaaaaaaaaa</a></li> -->
             </ul>
           </article>
         </div>
 
         <div class="wrapper">
           <aside id="places"><h2>Places</h2></aside>
-          <article id="placess">
+          <article id="placesplaces">
             <ul>
               <li id="mnz"><a href="https://goo.gl/maps/h6HLfT5eLeH2" target="_blank">Maryam Nassir Zadeh (LES)</a></li>
               <li id="dimes"><a href="https://goo.gl/maps/uZLUK95WpQM2" target="_blank">Dimes (LES)</a></li>
@@ -92,13 +85,16 @@
             </ul>
           </article>
         </div>
-        <aside id="spa"><h2>Spa</h2></aside>
-        <article id="spas">
-          <ul>
-            <li id="aire"><a href="https://goo.gl/maps/YPVQ4CYX5Dy" target="_blank">Aire Ancient Baths (Tribeca)</a></li>
-            <!-- <li id="asdf"><a href="fdsasdf" target="_blank">aaaaaaaaaa</a></li> -->
-          </ul>
-        </article>
+
+        <div class="wrapper">
+          <aside id="spas"><h2>Spa</h2></aside>
+          <article id="spasspas">
+            <ul>
+              <li id="aire"><a href="https://goo.gl/maps/YPVQ4CYX5Dy" target="_blank">Aire Ancient Baths (Tribeca)</a></li>
+              <!-- <li id="asdf"><a href="fdsasdf" target="_blank">aaaaaaaaaa</a></li> -->
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
   </body>
@@ -108,7 +104,78 @@
     let _limit = 10;
 
     function genRGBA() {
-      let o = Math.round, r = Math.random, s = 255;
+      return `
+        rgba(
+          ${Math.round(Math.random()*255)},
+          ${Math.round(Math.random()*255)},
+          ${Math.round(Math.random()*255)}, 0.8
+        )
+      `;
+    }
+
+    function createImages(item, i) {
+      const newImage = document.createElement('img');
+      newImage.id = `img-${item.id}`;
+      newImage.style.width = '200px';
+
+      const positionX = (((i % 18) + 1) * 15) + 50;
+      const positionY = ((i + 1) * 5) + 30;
+
+      if (newImage) {
+        newImage.style.right = `${positionX}px`;
+        newImage.style.top = `${positionY}px`;
+        newImage.style.borderColor = genRGBA();
+      }
+
+      if (![
+        'xian',
+        'congeevillage',
+        'okonomi',
+        'llamainn',
+        'katz',
+        'littlealley',
+        'vanessas',
+        'cooperhewitt',
+        'dimesmarket',
+        'totokaelo',
+        'costco',
+        'kinokuniya',
+        'carousel',
+        'sunrisemart',
+        'dsm',
+        'royce',
+        'linefriends',
+        'aire'
+      ].includes(item.id)) {
+        newImage.src = `./images/${item.id}.jpeg`;
+        body.appendChild(newImage);
+      }
+    }
+
+    function notHovering(image) {
+      if (image) {
+        image.style.zIndex = 0;
+        image.style.opacity = 0.5;
+        body.classList.add('notHoveringImage');
+        // image.style.width = '150px';
+      }
+    }
+
+    function seeImage(id) {
+      [...document.getElementsByTagName('img')].map(image => {
+        notHovering(image);
+      });
+
+      const itemImage = document.getElementById(id);
+      if (itemImage) {
+        itemImage.style.zIndex = 9;
+        itemImage.style.opacity = 1;
+        body.classList.remove('notHoveringImage');
+        // itemImage.style.width = '300px';
+      }
+    }
+
+    function setBackgroundColor() {
       body.style.backgroundColor = `
         rgba(
           ${Math.round(Math.random()*255)},
@@ -118,35 +185,26 @@
       `;
     }
 
-    function setImages(item, i) {
-      const positioning = (i + 1) * 15;
-      const itemImage = document.getElementById(`img-${item.id}`);
-
-      if (itemImage) {
-        itemImage.style.right = `${positioning}px`;
-        itemImage.style.top = `${positioning}px`;
-      }
-    }
-
-    function seeImage(id) {
-      [...document.getElementsByTagName('img')].map(image => {
-        image.style.zIndex = 0;
+    function setSectionHeights() {
+      [...document.getElementsByTagName('aside')].map((section, i) => {
+        const sectionContent = document.getElementById(`${section.id}${section.id}`);
+        section.style.height = `${sectionContent.offsetHeight}px`
       });
-
-      const itemImage = document.getElementById(id);
-      if (itemImage) {
-        itemImage.style.zIndex = 9;
-      }
     }
 
     function onLoad() {
-      genRGBA();
+      setSectionHeights();
+      setBackgroundColor();
+
       [...document.getElementsByTagName('li')].map((item, i) => {
-        setImages(item, i);
+        createImages(item, i);
+        item.addEventListener("mouseleave", function() {
+          const imageId = `img-${item.id}`
+          notHovering(document.getElementById(imageId));
+        });
         item.addEventListener("mouseover", function() {
           if (_limit === 0) {
-            let o = Math.round, r = Math.random, s = 255;
-            genRGBA();
+            setBackgroundColor();
             _limit = 10;
           } else {
             _limit--;
@@ -156,21 +214,5 @@
         });
       })
     }
-
-    const eats = document.getElementById('eats');
-    const eateats = document.getElementById('eateats');
-    eats.style.height = `${eateats.offsetHeight}px`;
-
-    const art = document.getElementById('art');
-    const artart = document.getElementById('artart');
-    art.style.height = `${artart.offsetHeight}px`;
-
-    const places = document.getElementById('places');
-    const placess = document.getElementById('placess');
-    places.style.height = `${placess.offsetHeight}px`;
-
-    const spa = document.getElementById('spa');
-    const spas = document.getElementById('spas');
-    spa.style.height = `${spas.offsetHeight}px`;
   </script>
 </html>
