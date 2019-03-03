@@ -10,142 +10,136 @@
 
     <title>when in nyc</title>
   </head>
-  <body onload="onload()" onscroll="onscroll()">
-    <h2 class="title">My Favorite</h2>
-    <table>
-      <tr id="eats">
-        <td>
-          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Eats</u></h2></div>
-          <div class="ex">
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
-          </div>
-        </td>
-        <td>
-          <ul>
-            <li>Very Fresh Noodles (Chelsea)</li>
-            <li>Xi'an Famous Foods (Multiple)</li>
-            <li>Babu Ji (Union Sq)</li>
-            <li>Russ & Daughters (LES)</li>
-            <li>Congee Village (LES + Flushing)</li>
-            <li>abcv (Union Sq)</li>
-            <li>Besfren (KTown)</li>
-            <li>OKONOMI // YUMI RAMEN (Williamsburg)</li>
-            <li>Llama Inn (Williamsburg)</li>
-            <li>Japan Village (Industry City)</li>
-            <li>Gelateria Gentile (Brooklyn)</li>
-            <li>Katz's Deli (LES)</li>
-            <li>Little Alley (Midtown)</li>
-            <li>Nur (Union Sq)</li>
-            <li>Big Wong (Chinatown)</li>
-            <li>Vanessa's Dumplings (LES)</li>
-            <li>ISE (East Village)</li>
-            <li>Royce Chocolates (Bryant Park)</li>
-            <li>Jeju Noodle Bar (West Village)</li>
-            <li>Basta Pasta (Union Sq)</li>
-          </ul>
-        </td>
-      </tr>
-      <tr id="art">
-        <td>
-          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Museums/Galls</u></h2></div>
-          <div class="ex">
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
-          </div>
-        </td>
-        <td>
-          <ul>
-            <li>The Hole (Nolita)</li>
-            <li>Whitney Museum (Chelsea)</li>
-            <li>MoMA (Midtown)</li>
-            <li>The Frick Collection (UES)</li>
-            <li>Main Met + Met Breuer (UES) + Met Cloisters</li>
-            <li>Cooper Hewitt (UES)</li>
-            <li>Guggenheim (UES)</li>
-            <li>MoMA PS1 (Long Island City)</li>
-            <li>Noguchi Museum (Long Island City)</li>
-          </ul>
-        </td>
-      </tr>
-      <tr id="spa">
-        <td>
-          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Spa</u></h2></div>
-        </td>
-        <td>
-          <ul>
-            <li>Aire Ancient Baths (Tribeca)</li>
-          </ul>
-        </td>
-      </tr>
-      <!-- <tr id="misc">
-        <td>
-          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Misc</u></h2></div>
-          <div class="ex">
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Misc</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
-            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Misc</u></h2></span>
-            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
-            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
-          </div>
-        </td>
-        <td>
-          <ul>
-            <li>aaaaaaaaaaaaaa (Nolita)</li>
-          </ul>
-        </td>
-      </tr> -->
-    </table>
+  <body onload="onLoad()">
+    <main>
+      <section class="favorite">
+        <h2>My Favorite</h2>
+      </section>
+      <section class="items">
+        <div class="wrapper">
+          <aside id="eats"><h2>Eats</h2></aside>
+          <article id="eateats">
+            <ul>
+              <li id="asdf"><a href="https://goo.gl/maps/4zMLtBN7xtH2" target="_blank">Very Fresh Noodles (Chelsea)</a></li>
+              <li id="asdf"><a href="https://www.google.com/maps/search/xian+famous+foods/@40.7420826,-74.0229937,14z/data=!3m1!4b1" target="_blank">Xi'an Famous Foods (Multiple)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/p6Py87C7VNR2" target="_blank">Babu Ji (Union Sq)</a></li>
+              <li id="asdf"><a href="https://www.google.com/maps/search/russ+and+daughters/@40.7347447,-74.0106361,14z/data=!3m1!4b1" target="_blank">Russ & Daughters (LES)</a></li>
+              <li id="asdf"><a href="https://www.google.com/maps/search/congee+village/@40.7098265,-74.0690566,11z/data=!3m1!4b1" target="_blank">Congee Village (LES + Flushing)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/pE7EPFTfcsB2" target="_blank">abcv (Union Sq)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/crXo1Rs6Dgw" target="_blank">Besfren (KTown)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/38R6oNTaEm42" target="_blank">OKONOMI (Williamsburg)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/YYfbxnRKvcP2" target="_blank">Llama Inn (Williamsburg)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/MFTwdxPxMNk" target="_blank">Japan Village (Industry City)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/rrTZtudNABR2" target="_blank">Gelateria Gentile (Brooklyn)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/Bw1Aq7LGwc22" target="_blank">Katz's Deli (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/7aoY2VCu5bG2" target="_blank">Little Alley (Midtown)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/Fji7sRibtoF2" target="_blank">Nur (Union Sq)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/9M2LVFxRrgv" target="_blank">Big Wong (Chinatown)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/qNVMVukDMXG2" target="_blank">Vanessa's Dumplings (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/dZFxoto5Fzz" target="_blank">ISE (East Village)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/rHB2X9eZYkM2" target="_blank">Jeju Noodle Bar (West Village)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/jXjEE4CUb1T2" target="_blank">Basta Pasta (Union Sq)</a></li>
+            </ul>
+            <!-- <img src="./images/veryfreshnoodles.jpeg" width="300" /> -->
+          </article>
+        </div>
 
-    <p><i>Disclaimer: I don't know pizza</i></p>
+        <div class="wrapper">
+          <aside id="art"><h2>Art</h2></aside>
+          <article id="artart">
+            <ul>
+              <li id="asdf"><a href="https://goo.gl/maps/4ZLsT48TTiF2" target="_blank">The Hole (Nolita)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/EgCshg6dnFy" target="_blank">Whitney Museum (Chelsea)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/gfv3FvjdUMr" target="_blank">MoMA (Midtown)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/ek1TSeLDAGJ2" target="_blank">The Frick Collection (UES)</a></li>
+              <li id="asdf"><a href="https://www.google.com/maps/search/met/@40.7764321,-73.9657134,17z/data=!3m1!4b1" target="_blank">Main Met + Met Breuer (UES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/PangBjt4XEs" target="_blank">The Met Cloisters (Fort George)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/shMkKQBEjg22" target="_blank">Cooper Hewitt (UES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/cKVHc9vUret" target="_blank">Guggenheim (UES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/jZnvp2zBsB62" target="_blank">MoMA PS1 (Long Island City)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/7pjC6ZuaU222" target="_blank">Noguchi Museum (Long Island City)</a></li>
+            </ul>
+          </article>
+        </div>
 
+        <div class="wrapper">
+          <aside id="places"><h2>Places</h2></aside>
+          <article id="placess">
+            <ul>
+              <li id="asdf"><a href="https://goo.gl/maps/h6HLfT5eLeH2" target="_blank">Maryam Nassir Zadeh (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/uZLUK95WpQM2" target="_blank">Dimes (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/QEeCoZnhJnx" target="_blank">Dimes Market (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/3eaw4GVUuHk" target="_blank">Chop Suey Club (LES)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/dehHNu6Lwj72" target="_blank">High Line (Chelsea)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/6LPNYV28iLG2" target="_blank">Totokaelo (Soho)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/sCWD9UxT39r" target="_blank">Costco (Brooklyn)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/nYn13PCfLAN2" target="_blank">Kinokuniya (Bryant Park)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/stjF4PGd6ur" target="_blank">Jane's Carousel (Dumbo)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/Px2XdJZxHEJ2" target="_blank">Mood Fabrics (Garment District)</a></li>
+              <li id="asdf"><a href="https://www.google.com/maps/search/sunrise+mart/@40.7537545,-74.007958,14z/data=!3m1!4b1" target="_blank">Sunrise Mart (East/West Village)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/xA8hRVtpU3z" target="_blank">Dover Street Market (Midtown)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/FjEf4FUkEfw" target="_blank">Royce Chocolates (Bryant Park)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/RLz6BCft3WG2" target="_blank">Line Friends Store (Times Sq)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/4XQfwvBDjfM2" target="_blank">Dominique Ansel Bakery (Greenwich)</a></li>
+              <li id="asdf"><a href="https://goo.gl/maps/66YeTFzobx72" target="_blank">Hunan Slurp (East Village)</a></li>
+              <!-- <li id="asdf"><a href="fdsasdf" target="_blank">aaaaaaaaaa</a></li> -->
+            </ul>
+          </article>
+        </div>
+        <aside id="spa"><h2>Spa</h2></aside>
+        <article id="spas">
+          <ul>
+            <li id="asdf"><a href="https://goo.gl/maps/YPVQ4CYX5Dy" target="_blank">Aire Ancient Baths (Tribeca)</a></li>
+            <!-- <li id="asdf"><a href="fdsasdf" target="_blank">aaaaaaaaaa</a></li> -->
+          </ul>
+        </article>
+      </section>
+    </main>
   </body>
   <script type="text/javascript">
-    const headerCols = {
-      start: '#ffe5ef',
-      eats: '#e9e5ff',
-      art: '#feffe5'
-    }
-    const eats = document.getElementById('eats');
     const body = document.getElementsByTagName('body')[0];
-    console.log('eats', eats.offsetHeight)
-    const eatsTitle = document.querySelector('#eats td h2');
-    console.log(eatsTitle.positionY)
+    let _limit = 10;
+
+    function genRGBA() {
+      let o = Math.round, r = Math.random, s = 255;
+      body.style.backgroundColor = `
+        rgba(
+          ${Math.round(Math.random()*255)},
+          ${Math.round(Math.random()*255)},
+          ${Math.round(Math.random()*255)}, 0.2
+        )
+      `;
+    }
+
+    function onLoad() {
+      genRGBA();
+      [...document.getElementsByTagName('li')].map(item => {
+        item.addEventListener("mouseover", function() {
+          if (_limit === 0) {
+            let o = Math.round, r = Math.random, s = 255;
+            genRGBA();
+            _limit = 10;
+          } else {
+            _limit--;
+          }
+        });
+      })
+    }
+
+    const eats = document.getElementById('eats');
+    const eateats = document.getElementById('eateats');
+    eats.style.height = `${eateats.offsetHeight}px`;
 
     const art = document.getElementById('art');
-    console.log('art', art.offsetHeight)
+    const artart = document.getElementById('artart');
+    art.style.height = `${artart.offsetHeight}px`;
 
-    function onload() {
-      body.style.backgroundColor = headerCols.start;
-      eatsTitle.style.backgroundColor = headerCols.start;
-    }
+    const places = document.getElementById('places');
+    const placess = document.getElementById('placess');
+    places.style.height = `${placess.offsetHeight}px`;
 
-    function onscroll() {
-      if (window.scrollY <= eats.offsetHeight) {
-        body.style.backgroundColor = headerCols.start;
-      }
-
-      if (window.scrollY > eats.offsetHeight) { // eats
-        body.style.backgroundColor = headerCols.eats;
-      }
-
-      if (window.scrollY > eats.offsetHeight + art.offsetHeight) { // art
-        body.style.backgroundColor = headerCols.art;
-      }
-    }
+    const spa = document.getElementById('spa');
+    const spas = document.getElementById('spas');
+    spa.style.height = `${spas.offsetHeight}px`;
   </script>
 </html>
