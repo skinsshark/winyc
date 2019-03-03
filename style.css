@@ -9,6 +9,7 @@
 }
 
 body {
+	position: relative;
   background-color: #fff;
   font-family: 'Main';
   padding: 10px;
@@ -154,3 +155,8 @@ ul li::before {
 /* ul li ul li::before {
   content: '= ';
 } */
+
+footer {
+	position: absolute;
+	bottom: 10px;
+}
