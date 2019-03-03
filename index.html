@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="./style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <title>when in nyc</title>
+  </head>
+  <body onload="onload()" onscroll="onscroll()">
+    <h2 class="title">My Favorite</h2>
+    <table>
+      <tr id="eats">
+        <td>
+          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Eats</u></h2></div>
+          <div class="ex">
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Eats</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Eats</u></h2>
+          </div>
+        </td>
+        <td>
+          <ul>
+            <li>Very Fresh Noodles (Chelsea)</li>
+            <li>Xi'an Famous Foods (Multiple)</li>
+            <li>Babu Ji (Union Sq)</li>
+            <li>Russ & Daughters (LES)</li>
+            <li>Congee Village (LES + Flushing)</li>
+            <li>abcv (Union Sq)</li>
+            <li>Besfren (KTown)</li>
+            <li>OKONOMI // YUMI RAMEN (Williamsburg)</li>
+            <li>Llama Inn (Williamsburg)</li>
+            <li>Japan Village (Industry City)</li>
+            <li>Gelateria Gentile (Brooklyn)</li>
+            <li>Katz's Deli (LES)</li>
+            <li>Little Alley (Midtown)</li>
+            <li>Nur (Union Sq)</li>
+            <li>Big Wong (Chinatown)</li>
+            <li>Vanessa's Dumplings (LES)</li>
+            <li>ISE (East Village)</li>
+            <li>Royce Chocolates (Bryant Park)</li>
+            <li>Jeju Noodle Bar (West Village)</li>
+            <li>Basta Pasta (Union Sq)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="art">
+        <td>
+          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Museums/Galls</u></h2></div>
+          <div class="ex">
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Museums/Galls</u></h2>
+          </div>
+        </td>
+        <td>
+          <ul>
+            <li>The Hole (Nolita)</li>
+            <li>Whitney Museum (Chelsea)</li>
+            <li>MoMA (Midtown)</li>
+            <li>The Frick Collection (UES)</li>
+            <li>Main Met + Met Breuer (UES) + Met Cloisters</li>
+            <li>Cooper Hewitt (UES)</li>
+            <li>Guggenheim (UES)</li>
+            <li>MoMA PS1 (Long Island City)</li>
+            <li>Noguchi Museum (Long Island City)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr id="spa">
+        <td>
+          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Spa</u></h2></div>
+        </td>
+        <td>
+          <ul>
+            <li>Aire Ancient Baths (Tribeca)</li>
+          </ul>
+        </td>
+      </tr>
+      <!-- <tr id="misc">
+        <td>
+          <div class="main"><h2><span class="invis">My Favorite</span> <br /><u>Misc</u></h2></div>
+          <div class="ex">
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Misc</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
+            <span class="invis"><h2><span class="invis">My Favorite</span> <u>Misc</u></h2></span>
+            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
+            <h2><span class="invis">My Favorite</span> <u>Misc</u></h2>
+          </div>
+        </td>
+        <td>
+          <ul>
+            <li>aaaaaaaaaaaaaa (Nolita)</li>
+          </ul>
+        </td>
+      </tr> -->
+    </table>
+
+    <p><i>Disclaimer: I don't know pizza</i></p>
+
+  </body>
+  <script type="text/javascript">
+    const headerCols = {
+      start: '#ffe5ef',
+      eats: '#e9e5ff',
+      art: '#feffe5'
+    }
+    const eats = document.getElementById('eats');
+    const body = document.getElementsByTagName('body')[0];
+    console.log('eats', eats.offsetHeight)
+    const eatsTitle = document.querySelector('#eats td h2');
+    console.log(eatsTitle.positionY)
+
+    const art = document.getElementById('art');
+    console.log('art', art.offsetHeight)
+
+    function onload() {
+      body.style.backgroundColor = headerCols.start;
+      eatsTitle.style.backgroundColor = headerCols.start;
+    }
+
+    function onscroll() {
+      if (window.scrollY <= eats.offsetHeight) {
+        body.style.backgroundColor = headerCols.start;
+      }
+
+      if (window.scrollY > eats.offsetHeight) { // eats
+        body.style.backgroundColor = headerCols.eats;
+      }
+
+      if (window.scrollY > eats.offsetHeight + art.offsetHeight) { // art
+        body.style.backgroundColor = headerCols.art;
+      }
+    }
+  </script>
+</html>
