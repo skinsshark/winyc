@@ -65,7 +65,11 @@ img {
 }
 
 .imagesLoading img {
-	opacity: 0.3;
+	opacity: 0.3 !important;
+}
+
+.imagesLoading {
+	pointer-events: none;
 }
 
 .notHoveringImage img {
