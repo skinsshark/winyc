@@ -1,0 +1,14 @@
+{
+  "description": "where sharon goes when in new york city",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "./images/face.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    }
+  ],
+  "name": "when in new york city",
+  "short_name": "sz/winyc",
+  "start_url": "./index.html"
+}
