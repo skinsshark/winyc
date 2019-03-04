@@ -13,11 +13,11 @@ function genRGBA() {
 }
 
 function createImages(item, i) {
-  const rowIndex = Math.ceil((i + 1) / 18);
-  const colIndex = i % 18;
+  const rowIndex = Math.ceil((i + 1) / 13);
+  const colIndex = i % 13;
 
   const positionX = ((colIndex + 1) * 15) + 50 + (10 * rowIndex);
-  const positionY = ((i + 1) * 5) + 30;
+  const positionY = ((i + 1) * 8) + 20;
 
   const newImage = document.createElement('img');
   newImage.id = `img-${item.id}`;
@@ -31,7 +31,6 @@ function createImages(item, i) {
     'cooperhewitt',
     'totokaelo',
     'kinokuniya',
-    'carousel',
     'sunrisemart',
     'dsm',
     'royce',
