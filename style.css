@@ -13,7 +13,7 @@ body {
   background-color: #fff;
   font-family: 'Main';
   padding: 10px;
-	min-height: 1800px;
+	min-height: 2000px;
 }
 
 * {
@@ -101,7 +101,8 @@ aside h2 {
   position: -webkit-sticky;
   position: sticky;
 	/* top: 18px; */
-	top: 40px;
+	top: 45px;
+	line-height: 1;
 }
 
 article,
