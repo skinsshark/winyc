@@ -32,6 +32,11 @@ function createImages(item, i) {
     if (_availImages === _imagesLoaded) {
       body.classList.remove('imagesLoading')
     }
+
+    // make landscape images larger
+    if (newImage.width > newImage.height) {
+      newImage.classList.add('resizeImage');
+    }
   }
 
   if (![

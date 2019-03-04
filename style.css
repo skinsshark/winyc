@@ -64,6 +64,11 @@ img {
 	border-right: 5px solid #fff;
 }
 
+img.resizeImage {
+	width: auto !important;
+	height: 200px;
+}
+
 .imagesLoading img {
 	opacity: 0.3 !important;
 }
@@ -80,11 +85,21 @@ img {
 	img {
 		width: 400px !important;
 	}
+
+	img.resizeImage {
+		width: auto !important;
+		height: 400px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
 	img {
 		width: 100px !important;
+	}
+
+	img.resizeImage {
+		width: auto !important;
+		height: 100px;
 	}
 }
 
