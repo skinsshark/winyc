@@ -1,6 +1,8 @@
 const body = document.getElementsByTagName('body')[0];
 let _limit = 10;
 let _zIndex = 0;
+let _availImages = 0;
+let _imagesLoaded = 0;
 
 function genRGBA() {
   return `
@@ -25,6 +27,12 @@ function createImages(item, i) {
   newImage.style.right = `${positionX}px`;
   newImage.style.top = `${positionY}px`;
   newImage.style.borderColor = genRGBA();
+  newImage.onload = () => {
+    _imagesLoaded++;
+    if (_availImages === _imagesLoaded) {
+      body.classList.remove('imagesLoading')
+    }
+  }
 
   if (![
     'xian',
@@ -89,9 +97,12 @@ function onLoad() {
   setSectionHeights();
   setBackgroundColor();
 
-  [...document.getElementsByTagName('li')]
-  .filter(item => ![...item.classList].includes('photoless'))
-  .map((item, i) => {
+  const allImages =
+    [...document.getElementsByTagName('li')]
+    .filter(item => ![...item.classList].includes('photoless'));
+  _availImages = allImages.length;
+
+  allImages.map((item, i) => {
     createImages(item, i);
     item.addEventListener("mouseleave", function() {
       const imageId = `img-${item.id}`

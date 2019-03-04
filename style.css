@@ -64,6 +64,10 @@ img {
 	border-right: 5px solid #fff;
 }
 
+.imagesLoading img {
+	opacity: 0.3;
+}
+
 .notHoveringImage img {
 	opacity: 1 !important;
 }
