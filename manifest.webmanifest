@@ -3,7 +3,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src": "./images/face.png",
+      "src": "./images/pwa.png",
       "sizes": "60x60",
       "type": "image/png"
     }
