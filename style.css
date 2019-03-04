@@ -73,10 +73,6 @@ img.resizeImage {
 	opacity: 0.3 !important;
 }
 
-.imagesLoading {
-	pointer-events: none;
-}
-
 .notHoveringImage img {
 	opacity: 1 !important;
 }
@@ -100,6 +96,12 @@ img.resizeImage {
 	img.resizeImage {
 		width: auto !important;
 		height: 100px;
+	}
+}
+
+@media only screen and (min-width: 901px) {
+	.imagesLoading {
+		pointer-events: none;
 	}
 }
 
