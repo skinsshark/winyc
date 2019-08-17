@@ -50,7 +50,7 @@ function createImages(item, i) {
     'linefriends',
     'aire'
   ].includes(item.id)) {
-    newImage.src = `./images/${item.id}.jpeg`;
+    newImage.src = `./images/${item.id}.jpg`;
     body.appendChild(newImage);
   }
 }
